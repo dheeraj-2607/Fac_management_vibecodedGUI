@@ -48,23 +48,13 @@ interface FacultyAuditPortfolioProps {
 // Checklist items for course files
 const courseFileChecklist = [
   { id: "format", label: "Document format is correct and readable" },
-  { id: "content", label: "Content is complete and comprehensive" },
-  { id: "objectives", label: "Learning objectives are clearly defined" },
-  { id: "assessment", label: "Assessment criteria are included" },
-  { id: "timeline", label: "Timeline/schedule is appropriate" },
-  { id: "resources", label: "Required resources are listed" },
-  { id: "quality", label: "Overall quality meets standards" }
+  { id: "content", label: "Content is complete and comprehensive" }
 ];
 
 // Checklist items for event reports
 const eventReportChecklist = [
   { id: "details", label: "Event details are complete and accurate" },
-  { id: "objectives", label: "Objectives are clearly stated" },
-  { id: "attendance", label: "Participant information is documented" },
-  { id: "outcomes", label: "Outcomes and impact are described" },
-  { id: "evidence", label: "Supporting evidence/photos are included" },
-  { id: "feedback", label: "Participant feedback is documented" },
-  { id: "compliance", label: "Report complies with college standards" }
+  { id: "objectives", label: "Objectives are clearly stated" }
 ];
 
 export function FacultyAuditPortfolio({ faculty, onBack }: FacultyAuditPortfolioProps) {
@@ -83,16 +73,6 @@ export function FacultyAuditPortfolio({ faculty, onBack }: FacultyAuditPortfolio
       courseName: "CS101 - Introduction to Programming",
       semester: "Fall 2024",
       status: "Submitted"
-    },
-    {
-      id: "2",
-      fileName: "CS101_LessonPlan_Week1-5.pdf",
-      fileType: "Lesson Plan",
-      uploadDate: "2024-11-20",
-      courseName: "CS101 - Introduction to Programming",
-      semester: "Fall 2024",
-      status: "Approved",
-      auditorRemarks: "Excellent lesson plan with clear objectives and assessment criteria."
     }
   ];
 
@@ -109,20 +89,6 @@ export function FacultyAuditPortfolio({ faculty, onBack }: FacultyAuditPortfolio
       objectives: "Educate community members about healthy lifestyle choices and disease prevention",
       outcomes: "Successfully reached 45 community members, distributed health information materials",
       status: "Submitted"
-    },
-    {
-      id: "2",
-      eventName: "Environmental Cleanup Drive",
-      eventType: "Environmental",
-      eventDate: "2024-12-01",
-      location: "City Park",
-      participants: 60,
-      duration: "3 hours",
-      description: "Student-led initiative to clean up local park and promote environmental awareness.",
-      objectives: "Clean public spaces and raise awareness about waste management",
-      outcomes: "Collected 200kg of waste, planted 20 trees",
-      status: "Approved",
-      auditorRemarks: "Well-organized event with excellent community impact and documentation."
     }
   ];
 

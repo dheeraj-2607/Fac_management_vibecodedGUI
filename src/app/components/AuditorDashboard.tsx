@@ -74,65 +74,11 @@ export function AuditorDashboard() {
       pendingReports: 1,
       rejectedFiles: 1,
       rejectedReports: 0
-    },
-    {
-      id: "3",
-      name: "Dr. Emily Rodriguez",
-      department: "Biology",
-      totalFiles: 6,
-      totalReports: 6,
-      approvedFiles: 5,
-      approvedReports: 4,
-      pendingFiles: 1,
-      pendingReports: 1,
-      rejectedFiles: 0,
-      rejectedReports: 1
-    },
-    {
-      id: "4",
-      name: "Dr. James Williams",
-      department: "Physics",
-      totalFiles: 9,
-      totalReports: 5,
-      approvedFiles: 7,
-      approvedReports: 4,
-      pendingFiles: 2,
-      pendingReports: 1,
-      rejectedFiles: 0,
-      rejectedReports: 0
-    },
-    {
-      id: "5",
-      name: "Dr. Patricia Williams",
-      department: "English Literature",
-      totalFiles: 8,
-      totalReports: 4,
-      approvedFiles: 6,
-      approvedReports: 3,
-      pendingFiles: 1,
-      pendingReports: 0,
-      rejectedFiles: 1,
-      rejectedReports: 1
-    },
-    {
-      id: "6",
-      name: "Dr. Robert Taylor",
-      department: "Chemistry",
-      totalFiles: 7,
-      totalReports: 4,
-      approvedFiles: 3,
-      approvedReports: 2,
-      pendingFiles: 3,
-      pendingReports: 2,
-      rejectedFiles: 1,
-      rejectedReports: 0
     }
   ];
 
   const recentReviews = [
-    { faculty: "Dr. Sarah Johnson", item: "CS101 Syllabus", action: "Approved", time: "2 hours ago" },
-    { faculty: "Dr. Michael Chen", item: "MATH201 Lesson Plan", action: "Reviewed", time: "5 hours ago" },
-    { faculty: "Dr. Emily Rodriguez", item: "Health Awareness Campaign", action: "Approved", time: "1 day ago" }
+    { faculty: "Dr. Sarah Johnson", item: "CS101 Syllabus", action: "Approved", time: "2 hours ago" }
   ];
 
   if (selectedFaculty) {

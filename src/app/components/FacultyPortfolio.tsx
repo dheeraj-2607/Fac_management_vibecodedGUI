@@ -64,24 +64,6 @@ export function FacultyPortfolio({ faculty, onBack }: FacultyPortfolioProps) {
       courseName: "CS101 - Introduction to Programming",
       semester: "Fall 2024",
       status: "Approved"
-    },
-    {
-      id: "2",
-      fileName: "CS101_LessonPlan_Week1-5.pdf",
-      fileType: "Lesson Plan",
-      uploadDate: "2024-11-20",
-      courseName: "CS101 - Introduction to Programming",
-      semester: "Fall 2024",
-      status: "Approved"
-    },
-    {
-      id: "3",
-      fileName: "CS201_Assignment1.pdf",
-      fileType: "Assignment",
-      uploadDate: "2024-12-01",
-      courseName: "CS201 - Data Structures",
-      semester: "Fall 2024",
-      status: "Submitted"
     }
   ];
 
@@ -99,19 +81,7 @@ export function FacultyPortfolio({ faculty, onBack }: FacultyPortfolioProps) {
       outcomes: "Successfully reached 45 community members, distributed health information materials",
       status: "Approved"
     },
-    {
-      id: "2",
-      eventName: "Environmental Cleanup Drive",
-      eventType: "Environmental",
-      eventDate: "2024-12-01",
-      location: "City Park",
-      participants: 60,
-      duration: "3 hours",
-      description: "Student-led initiative to clean up local park and promote environmental awareness.",
-      objectives: "Clean public spaces and raise awareness about waste management",
-      outcomes: "Collected 200kg of waste, planted 20 trees",
-      status: "Submitted"
-    }
+    
   ];
 
   const getStatusColor = (status: string) => {

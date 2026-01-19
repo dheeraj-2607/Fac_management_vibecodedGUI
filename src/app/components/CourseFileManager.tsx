@@ -48,57 +48,7 @@ interface CourseFile {
 
 export function CourseFileManager() {
   const [files, setFiles] = useState<CourseFile[]>([
-    {
-      id: "1",
-      fileName: "CS101_Syllabus_Fall2024.pdf",
-      courseCode: "CS101",
-      courseName: "Introduction to Computer Science",
-      fileType: "Syllabus",
-      uploadDate: "2024-08-15",
-      semester: "Fall",
-      academicYear: "2024-2025",
-      size: "1.2 MB",
-      status: "Approved",
-      adminRemarks: "Excellent syllabus with comprehensive learning objectives. All required components are present and well-structured.",
-      reviewedBy: "Dr. Michael Chen (Department Head)",
-      reviewedDate: "2024-08-16",
-      facultyName: "Dr. Jane Smith",
-      department: "Computer Science"
-    },
-    {
-      id: "2",
-      fileName: "CS101_LessonPlan_Week1-5.pdf",
-      courseCode: "CS101",
-      courseName: "Introduction to Computer Science",
-      fileType: "Lesson Plan",
-      uploadDate: "2024-08-20",
-      semester: "Fall",
-      academicYear: "2024-2025",
-      size: "850 KB",
-      status: "Approved",
-      adminRemarks: "Well-organized lesson plan. Please ensure to include more interactive activities for week 3.",
-      reviewedBy: "Dr. Michael Chen (Department Head)",
-      reviewedDate: "2024-08-21",
-      facultyName: "Dr. Jane Smith",
-      department: "Computer Science"
-    },
-    {
-      id: "3",
-      fileName: "MATH201_Assignments_Module1.pdf",
-      courseCode: "MATH201",
-      courseName: "Advanced Calculus",
-      fileType: "Assignment",
-      uploadDate: "2024-09-01",
-      semester: "Fall",
-      academicYear: "2024-2025",
-      size: "650 KB",
-      status: "Rejected",
-      adminRemarks: "Assignment difficulty level needs adjustment. Please revise questions 5-8 to align with course objectives and resubmit.",
-      reviewedBy: "Dr. Patricia Williams (Academic Dean)",
-      reviewedDate: "2024-09-02",
-      facultyName: "Dr. John Doe",
-      department: "Mathematics"
-    }
+    
   ]);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -117,34 +67,13 @@ export function CourseFileManager() {
   const [isResponseOpen, setIsResponseOpen] = useState(false);
 
   // File categories for course files
-  const fileCategories = [
-    "CO - PO mapping",
-    "CO - PSO mapping",
-    "Justification of Mappings",
-    "Course Plan",
-    "Course Coverage",
-    "Continuous Evaluation sheet",
-    "Internal Test Notice/Schedule",
-    "Internal Test Questions",
-    "Internal Test Answer Scheme",
-    "Internal Test Mark list (with spilt-up)",
-    "Internal Test Sample Answer Sheets",
-    "Attendance % (Summary)",
-    "Internal marks with split-up",
-    "Course Exit Survey",
-    "Sample Fair record",
-    "Lab Manual",
-    "Attainment Calculation"
+  const fileCategories:any = [
+    
   ];
 
   // Mock file types
-  const fileTypes = [
-    "Syllabus",
-    "Lesson Plan",
-    "Assignment",
-    "Lab Manual",
-    "Assessment",
-    "Other"
+  const fileTypes:any = [
+    
   ];
 
   const handleFileUpload = (e: React.FormEvent) => {
@@ -282,7 +211,7 @@ export function CourseFileManager() {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Types</SelectItem>
-              {fileTypes.map(type => (
+              {fileTypes.map((type:any) => (
                 <SelectItem key={type} value={type}>{type}</SelectItem>
               ))}
             </SelectContent>
@@ -342,7 +271,7 @@ export function CourseFileManager() {
                       <SelectValue placeholder="Select file category" />
                     </SelectTrigger>
                     <SelectContent>
-                      {fileCategories.map(category => (
+                      {fileCategories.map((category:any) => (
                         <SelectItem key={category} value={category}>{category}</SelectItem>
                       ))}
                     </SelectContent>

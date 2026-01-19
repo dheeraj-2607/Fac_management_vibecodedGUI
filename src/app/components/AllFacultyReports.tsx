@@ -77,50 +77,6 @@ export function AllFacultyReports() {
           responseDate: "2024-11-23"
         }
       ]
-    },
-    {
-      id: "2",
-      eventName: "STEM Workshop for High School Students",
-      eventType: "Educational Outreach",
-      eventDate: "2024-10-20",
-      location: "Springfield High School",
-      participants: 60,
-      duration: "6 hours",
-      description: "Interactive STEM workshop introducing high school students to engineering concepts through hands-on activities.",
-      objectives: "Inspire students to pursue STEM careers and provide hands-on learning experiences",
-      outcomes: "Engaged 60 students in building projects; 85% expressed increased interest in STEM fields",
-      status: "Approved",
-      submittedDate: "2024-10-25",
-      facultyCoordinator: "Dr. Robert Johnson",
-      department: "Engineering",
-      adminRemarks: "Excellent outreach program with measurable impact on student interest in STEM.",
-      reviewedBy: "Dr. Patricia Williams (Department Head)",
-      reviewedDate: "2024-10-26",
-      peerReviews: []
-    },
-    {
-      id: "3",
-      eventName: "Financial Literacy Workshop",
-      eventType: "Community Service",
-      eventDate: "2024-09-10",
-      location: "College Auditorium",
-      participants: 30,
-      duration: "3 hours",
-      description: "Workshop on personal finance management and investment basics for community members.",
-      objectives: "Improve financial literacy in the local community",
-      outcomes: "30 participants gained understanding of budgeting and savings strategies",
-      status: "Submitted",
-      submittedDate: "2024-09-15",
-      facultyCoordinator: "Dr. James Brown",
-      department: "Business",
-      peerReviews: [
-        {
-          id: "pr2",
-          reviewerName: "Dr. Maria Garcia",
-          reviewDate: "2024-09-16",
-          comment: "Great topic choice! Consider partnering with local banks for future sessions to provide real-world perspectives."
-        }
-      ]
     }
   ]);
 

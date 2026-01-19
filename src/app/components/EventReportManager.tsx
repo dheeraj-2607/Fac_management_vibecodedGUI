@@ -77,37 +77,6 @@ export function EventReportManager() {
       adminRemarks: "Outstanding community outreach initiative. The event showed excellent planning and execution. The health materials were comprehensive and age-appropriate. Consider expanding this program to neighboring communities.",
       reviewedBy: "Dr. Patricia Williams (Academic Dean)",
       reviewedDate: "2024-11-22"
-    },
-    {
-      id: "2",
-      eventName: "Environmental Cleanup Drive",
-      community: "Environmental Initiative",
-      eventDate: "2024-12-01",
-      location: "City Park",
-      participants: 60,
-      duration: "3 hours",
-      description: "Student-led initiative to clean up local park and promote environmental awareness. The event involved collecting waste, segregating recyclables, and planting trees. Educational sessions on waste management and environmental conservation were conducted.",
-      objectives: "Clean public spaces and raise awareness about waste management and environmental conservation.",
-      outcomes: "Collected 200kg of waste, planted 20 trees. Engaged 60 volunteers including students and local residents.",
-      thumbnailUrl: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop",
-      status: "Submitted",
-      submittedDate: "2024-12-05",
-      facultyCoordinator: "Dr. Sarah Johnson"
-    },
-    {
-      id: "3",
-      eventName: "Digital Literacy Workshop",
-      community: "Educational Outreach",
-      eventDate: "2024-12-18",
-      location: "College Auditorium",
-      participants: 30,
-      duration: "6 hours",
-      description: "Workshop for senior citizens on basic computer skills and internet safety. Covered topics like using email, social media, online banking, and identifying online scams.",
-      objectives: "Bridge the digital divide by teaching basic computer skills to senior citizens.",
-      outcomes: "Draft - Event scheduled for upcoming week",
-      thumbnailUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop",
-      status: "Draft",
-      facultyCoordinator: "Dr. Sarah Johnson"
     }
   ]);
 

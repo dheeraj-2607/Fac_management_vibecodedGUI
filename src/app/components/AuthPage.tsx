@@ -87,47 +87,7 @@ export function AuthPage({ onLogin }: AuthPageProps) {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Side - Branding */}
-        <div className="hidden md:block space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="h-16 w-16 bg-blue-600 rounded-xl flex items-center justify-center">
-              <GraduationCap className="h-10 w-10 text-white" />
-            </div>
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">Faculty Portal</h1>
-              <p className="text-gray-600">College Management System</p>
-            </div>
-          </div>
-          
-          <div className="space-y-4 bg-white/50 backdrop-blur rounded-2xl p-8 border border-gray-200">
-            <h2 className="text-2xl font-semibold text-gray-900">Welcome to the Faculty Management Platform</h2>
-            <p className="text-gray-600 leading-relaxed">
-              A comprehensive solution for managing course files, event reports, peer reviews, 
-              and administrative tasks. Built for educational excellence.
-            </p>
-            
-            <div className="space-y-3 pt-4">
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <User className="h-5 w-5 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-medium text-gray-900">Multiple User Roles</h3>
-                  <p className="text-sm text-gray-600">Faculty, Auditor, and Staff Advisor portals</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                  <Building className="h-5 w-5 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="font-medium text-gray-900">Department Management</h3>
-                  <p className="text-sm text-gray-600">Organize by departments and courses</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Right Side - Auth Form */}
         <Card className="shadow-2xl border-0">

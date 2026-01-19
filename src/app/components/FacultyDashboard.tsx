@@ -31,9 +31,7 @@ export function FacultyDashboard() {
     pendingReports: 2,
     totalParticipants: 245,
     recentActivity: [
-      { action: "Uploaded", item: "CS101_Syllabus_Fall2024.pdf", time: "2 hours ago" },
-      { action: "Submitted", item: "Environmental Cleanup Drive Report", time: "1 day ago" },
-      { action: "Approved", item: "Health Awareness Campaign Report", time: "3 days ago" }
+      { action: "Uploaded", item: "CS101_Syllabus_Fall2024.pdf", time: "2 hours ago" }
     ]
   };
 
@@ -50,61 +48,6 @@ export function FacultyDashboard() {
       courses: ["CS101 - Intro to Programming", "CS201 - Data Structures", "CS301 - Algorithms"],
       specialization: "Artificial Intelligence & Machine Learning",
       experience: "12 years"
-    },
-    {
-      id: "2",
-      name: "Dr. Michael Chen",
-      department: "Mathematics",
-      role: "Professor",
-      email: "michael.chen@college.edu",
-      phone: "+1 (555) 234-5678",
-      courses: ["MATH201 - Calculus II", "MATH301 - Linear Algebra", "MATH401 - Advanced Statistics"],
-      specialization: "Applied Mathematics & Statistics",
-      experience: "18 years"
-    },
-    {
-      id: "3",
-      name: "Dr. Emily Rodriguez",
-      department: "Biology",
-      role: "Assistant Professor",
-      email: "emily.rodriguez@college.edu",
-      phone: "+1 (555) 345-6789",
-      courses: ["BIO101 - General Biology", "BIO202 - Genetics", "BIO303 - Molecular Biology"],
-      specialization: "Molecular Biology & Genetics",
-      experience: "8 years"
-    },
-    {
-      id: "4",
-      name: "Dr. James Williams",
-      department: "Physics",
-      role: "Associate Professor",
-      email: "james.williams@college.edu",
-      phone: "+1 (555) 456-7890",
-      courses: ["PHY101 - Physics I", "PHY201 - Electromagnetism", "PHY301 - Quantum Mechanics"],
-      specialization: "Quantum Physics & Theoretical Physics",
-      experience: "15 years"
-    },
-    {
-      id: "5",
-      name: "Dr. Patricia Williams",
-      department: "English Literature",
-      role: "Professor",
-      email: "patricia.williams@college.edu",
-      phone: "+1 (555) 567-8901",
-      courses: ["ENG201 - American Literature", "ENG301 - Modern Poetry", "ENG401 - Literary Theory"],
-      specialization: "Contemporary Literature & Critical Theory",
-      experience: "20 years"
-    },
-    {
-      id: "6",
-      name: "Dr. Robert Taylor",
-      department: "Chemistry",
-      role: "Assistant Professor",
-      email: "robert.taylor@college.edu",
-      phone: "+1 (555) 678-9012",
-      courses: ["CHEM101 - General Chemistry", "CHEM202 - Organic Chemistry", "CHEM303 - Biochemistry"],
-      specialization: "Organic Chemistry & Biochemistry",
-      experience: "6 years"
     }
   ];
 

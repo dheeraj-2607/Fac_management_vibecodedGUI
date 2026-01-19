@@ -41,23 +41,11 @@ interface AuditReviewInterfaceProps {
 }
 
 const courseFileChecklist = [
-  { id: "format", label: "Document format is correct and readable" },
-  { id: "content", label: "Content is complete and comprehensive" },
-  { id: "objectives", label: "Learning objectives are clearly defined" },
-  { id: "assessment", label: "Assessment criteria are included" },
-  { id: "timeline", label: "Timeline/schedule is appropriate" },
-  { id: "resources", label: "Required resources are listed" },
-  { id: "quality", label: "Overall quality meets standards" }
+  { id: "format", label: "Document format is correct and readable" }
 ];
 
 const eventReportChecklist = [
-  { id: "details", label: "Event details are complete and accurate" },
-  { id: "objectives", label: "Objectives are clearly stated" },
-  { id: "attendance", label: "Participant information is documented" },
-  { id: "outcomes", label: "Outcomes and impact are described" },
-  { id: "evidence", label: "Supporting evidence/photos are included" },
-  { id: "feedback", label: "Participant feedback is documented" },
-  { id: "compliance", label: "Report complies with college standards" }
+  { id: "details", label: "Event details are complete and accurate" }
 ];
 
 export function AuditReviewInterface({ type, item, facultyName, onBack }: AuditReviewInterfaceProps) {

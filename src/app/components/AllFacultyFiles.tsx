@@ -69,51 +69,6 @@ export function AllFacultyFiles() {
           comment: "Very well-structured syllabus. The learning outcomes are clearly defined and measurable."
         }
       ]
-    },
-    {
-      id: "2",
-      fileName: "MATH201_Assignments_Module1.pdf",
-      courseCode: "MATH201",
-      courseName: "Advanced Calculus",
-      fileType: "Assignment",
-      uploadDate: "2024-09-01",
-      semester: "Fall",
-      academicYear: "2024-2025",
-      size: "650 KB",
-      status: "Rejected",
-      adminRemarks: "Assignment difficulty level needs adjustment. Please revise questions 5-8.",
-      reviewedBy: "Dr. Patricia Williams (Academic Dean)",
-      reviewedDate: "2024-09-02",
-      facultyName: "Dr. John Doe",
-      department: "Mathematics",
-      peerReviews: []
-    },
-    {
-      id: "3",
-      fileName: "ENG301_LessonPlan_Week1-4.pdf",
-      courseCode: "ENG301",
-      courseName: "Advanced English Composition",
-      fileType: "Lesson Plan",
-      uploadDate: "2024-08-25",
-      semester: "Fall",
-      academicYear: "2024-2025",
-      size: "920 KB",
-      status: "Approved",
-      adminRemarks: "Excellent integration of writing techniques and critical thinking exercises.",
-      reviewedBy: "Dr. Emily Davis (Department Head)",
-      reviewedDate: "2024-08-26",
-      facultyName: "Dr. Maria Garcia",
-      department: "English",
-      peerReviews: [
-        {
-          id: "pr2",
-          reviewerName: CURRENT_USER,
-          reviewDate: "2024-08-27",
-          comment: "Great approach to teaching composition. I particularly like the peer review component integrated into week 3.",
-          facultyResponse: "Thank you! I've found peer reviews help students develop critical analysis skills effectively.",
-          responseDate: "2024-08-28"
-        }
-      ]
     }
   ]);
 
