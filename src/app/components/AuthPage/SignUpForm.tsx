@@ -1,19 +1,20 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 import { Mail, Lock, User, Building, GraduationCap } from "lucide-react";
 import { toast } from "sonner";
+import { useState } from "react";
+import { SignUpFormData } from "./types";
 
-interface SignUpProps {
+interface SignUpFormProps {
   onSignUpSuccess: () => void;
   onSwitchToSignIn: () => void;
 }
 
-export function SignUp({ onSignUpSuccess, onSwitchToSignIn }: SignUpProps) {
-  const [formData, setFormData] = useState({
+export function SignUpForm({ onSignUpSuccess, onSwitchToSignIn }: SignUpFormProps) {
+  const [formData, setFormData] = useState<SignUpFormData>({
     email: "",
     password: "",
     confirmPassword: "",
@@ -104,19 +105,14 @@ export function SignUp({ onSignUpSuccess, onSwitchToSignIn }: SignUpProps) {
 
           <div className="space-y-2">
             <Label htmlFor="role">Role</Label>
-            <Select
-              value={formData.role}
-              onValueChange={(value) =>
-                setFormData({ ...formData, role: value })
-              }
-            >
-              <SelectTrigger id="role">
-                <SelectValue placeholder="Select your role" />
+            <Select value={formData.role} onValueChange={(value) => setFormData({ ...formData, role: value })}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select a role" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="Faculty">Faculty</SelectItem>
                 <SelectItem value="Auditor">Auditor</SelectItem>
-                <SelectItem value="Staff Advisor">Staff Advisor</SelectItem>
+                <SelectItem value="StaffAdvisor">Staff Advisor</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -127,7 +123,7 @@ export function SignUp({ onSignUpSuccess, onSwitchToSignIn }: SignUpProps) {
               <Building className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
                 id="department"
-                placeholder="Computer Science"
+                placeholder="e.g., Computer Science"
                 value={formData.department}
                 onChange={(e) =>
                   setFormData({ ...formData, department: e.target.value })
@@ -180,10 +176,10 @@ export function SignUp({ onSignUpSuccess, onSwitchToSignIn }: SignUpProps) {
             <Button
               type="button"
               variant="link"
-              className="p-0 h-auto font-semibold"
+              className="p-0 h-auto"
               onClick={onSwitchToSignIn}
             >
-              Sign In
+              Sign in here
             </Button>
           </div>
         </form>

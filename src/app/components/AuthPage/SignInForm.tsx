@@ -1,18 +1,19 @@
-import { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import { Mail, Lock, GraduationCap } from "lucide-react";
 import { toast } from "sonner";
+import { useState } from "react";
+import { SignInFormData } from "./types";
 
-interface SignInProps {
-  onLogin: (role: string) => void;
+interface SignInFormProps {
+  onSignInSuccess: (role: string) => void;
   onSwitchToSignUp: () => void;
 }
 
-export function SignIn({ onLogin, onSwitchToSignUp }: SignInProps) {
-  const [formData, setFormData] = useState({
+export function SignInForm({ onSignInSuccess, onSwitchToSignUp }: SignInFormProps) {
+  const [formData, setFormData] = useState<SignInFormData>({
     email: "",
     password: "",
   });
@@ -30,7 +31,7 @@ export function SignIn({ onLogin, onSwitchToSignUp }: SignInProps) {
     toast.success("Sign in successful!");
 
     // Default to Faculty role for demo
-    onLogin("Faculty");
+    onSignInSuccess("Faculty");
   };
 
   return (
@@ -98,10 +99,10 @@ export function SignIn({ onLogin, onSwitchToSignUp }: SignInProps) {
             <Button
               type="button"
               variant="link"
-              className="p-0 h-auto font-semibold"
+              className="p-0 h-auto"
               onClick={onSwitchToSignUp}
             >
-              Sign Up
+              Sign up here
             </Button>
           </div>
         </form>
