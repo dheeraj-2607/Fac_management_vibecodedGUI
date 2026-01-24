@@ -8,4 +8,12 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
+
+  
+## For reuse:-
+## 📦 Installation
+```bash
+git clone https://github.com/dheeraj-2607/Fac_management_vibecodedGUI.git
+cd Fac_management_vibecodedGUI
+# install dependencies
   
