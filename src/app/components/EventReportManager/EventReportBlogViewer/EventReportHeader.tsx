@@ -1,5 +1,5 @@
-import { Button } from "../../../ui/button";
-import { Badge } from "../../../ui/badge";
+import { Button } from "../../ui/button";
+import { Badge } from "../../ui/badge";
 import { ArrowLeft, Download } from "lucide-react";
 import { EventReport } from "./types";
 
